@@ -36,7 +36,7 @@ struct FeatureView: View {
     final class ViewState: FeatureDisplaying {
 
         @Published var nameViewState = FeatureNameView.ViewState()
-        @Published var counterViewState = FeatureCounterView.ViewState()
+        let counterViewState = FeatureCounterView.ViewState()
 
         func displayOnAppear(viewModel: Feature.OnAppear.ViewModel) {
             counterViewState.labelText = viewModel.labelText
