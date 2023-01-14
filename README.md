@@ -3,9 +3,9 @@
 This is a small example project to demonstrate how to use the VIP pattern with SwiftUI.
 It consists of three branches:
 
-* `main` → a basic example of a view with two buttons and a label with a value that increment or decrement the value of the label when interacting.
+* `main` → a basic example of a view with two buttons and a label. Tapping the buttons increments or decrements the value of the label.
 * `variations/subviews` → a further development of the `main` branch, moving the view with the buttons and the label to a subview.
-* `variations/subviews-asynchronous-task` → a further development of the `variations/subviews` branch, adding a second subview which displays the result of a decoded response from a network call to a REST API and has a reload button. E.g. when incrementing the counter and then tapping the reload button, it demonstrates that a state of one view will be unaffected when interacting with another subview within the same scene.
+* `variations/subviews-asynchronous-task` → a further development of the `variations/subviews` branch, adding a second subview which displays the result of a decoded response from a network call and has a reload button. E.g. when incrementing the counter and then tapping the reload button, it demonstrates that a state of one view will be unaffected when interacting with another subview within the same scene.
 
 ### Credit
 
