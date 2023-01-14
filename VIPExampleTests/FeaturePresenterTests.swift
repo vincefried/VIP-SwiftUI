@@ -54,6 +54,49 @@ final class FeaturePresenterTests: XCTestCase {
         XCTAssertTrue(mockDisplay.displayDidTapPlusButtonInvoked)
         XCTAssertEqual(mockDisplay.displayDidTapPlusButtonParameter?.labelText, "3")
     }
+
+    func test_presentDidLoadPersonInfo_thenDisplayDidLoadPersonInfo() {
+        // Given
+        let personInfo = PersonInfo(
+            name: "Test",
+            jobTitle: "",
+            imageURL: "",
+            websites: [],
+            description: ""
+        )
+
+        // When
+        sut.presentDidLoadPersonInfo(response: .init(personInfo: personInfo))
+
+        // Then
+        XCTAssertTrue(mockDisplay.displayDidLoadPersonInfoInvoked)
+        XCTAssertEqual(mockDisplay.displayDidLoadPersonInfoParameter?.isRedacted, false)
+        XCTAssertEqual(mockDisplay.displayDidLoadPersonInfoParameter?.nameText, "Test")
+    }
+
+    func test_presentDidTapLoadPersonInfoButton_givenIsLoading_thenDisplayDidTapLoadPersonInfoButtonRedacted() {
+        // Given
+        let isLoading = true
+
+        // When
+        sut.presentDidTapLoadPersonInfoButton(response: .init(isLoading: isLoading))
+
+        // Then
+        XCTAssertTrue(mockDisplay.displayDidTapLoadPersonInfoButton)
+        XCTAssertEqual(mockDisplay.displayDidTapLoadPersonInfoButtonParameter?.isRedacted, true)
+    }
+
+    func test_presentDidTapLoadPersonInfoButton_givenIsNotLoading_thenDisplayDidTapLoadPersonInfoButtonNotRedacted() {
+        // Given
+        let isLoading = false
+
+        // When
+        sut.presentDidTapLoadPersonInfoButton(response: .init(isLoading: isLoading))
+
+        // Then
+        XCTAssertTrue(mockDisplay.displayDidTapLoadPersonInfoButton)
+        XCTAssertEqual(mockDisplay.displayDidTapLoadPersonInfoButtonParameter?.isRedacted, false)
+    }
 }
 
 // MARK: - Mocks
@@ -78,5 +121,19 @@ private final class MockDisplay: FeatureDisplaying {
     func displayDidTapPlusButton(viewModel: VIPExample.Feature.DidTapPlusButton.ViewModel) {
         displayDidTapPlusButtonInvoked = true
         displayDidTapPlusButtonParameter = viewModel
+    }
+
+    var displayDidLoadPersonInfoInvoked = false
+    var displayDidLoadPersonInfoParameter: VIPExample.Feature.DidLoadPersonInfo.ViewModel?
+    func displayDidLoadPersonInfo(viewModel: VIPExample.Feature.DidLoadPersonInfo.ViewModel) {
+        displayDidLoadPersonInfoInvoked = true
+        displayDidLoadPersonInfoParameter = viewModel
+    }
+
+    var displayDidTapLoadPersonInfoButton = false
+    var displayDidTapLoadPersonInfoButtonParameter: VIPExample.Feature.DidTapLoadPersonInfoButton.ViewModel?
+    func displayDidTapLoadPersonInfoButton(viewModel: VIPExample.Feature.DidTapLoadPersonInfoButton.ViewModel) {
+        displayDidTapLoadPersonInfoButton = true
+        displayDidTapLoadPersonInfoButtonParameter = viewModel
     }
 }

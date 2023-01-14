@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PersonInfo: Decodable {
+struct PersonInfo: Equatable, Decodable {
     let name: String
     let jobTitle: String
     let imageURL: String
