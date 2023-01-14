@@ -35,7 +35,7 @@ struct FeatureView: View {
 
     final class ViewState: FeatureDisplaying {
 
-        @Published var nameViewState = FeatureNameView.ViewState()
+        let nameViewState = FeatureNameView.ViewState()
         let counterViewState = FeatureCounterView.ViewState()
 
         func displayOnAppear(viewModel: Feature.OnAppear.ViewModel) {
