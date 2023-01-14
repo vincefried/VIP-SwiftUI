@@ -43,4 +43,27 @@ enum Feature {
             let labelText: String
         }
     }
+
+    enum DidTapLoadPersonInfoButton {
+        struct Request { }
+
+        struct Response {
+            let isLoading: Bool
+        }
+
+        struct ViewModel {
+            let isRedacted: Bool
+        }
+    }
+
+    enum DidLoadPersonInfo {
+        struct Response {
+            let personInfo: PersonInfo
+        }
+
+        struct ViewModel {
+            let nameText: String
+            let isRedacted: Bool
+        }
+    }
 }

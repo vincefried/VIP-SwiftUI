@@ -17,6 +17,9 @@
 		0BC48EEE2972ECB600044170 /* FeatureModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EED2972ECB600044170 /* FeatureModels.swift */; };
 		0BC48EF02972F38C00044170 /* FeaturePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EEF2972F38C00044170 /* FeaturePresenterTests.swift */; };
 		0BC48EF22972F71600044170 /* FeatureCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EF12972F71600044170 /* FeatureCounterView.swift */; };
+		0BC48EF92972FB4F00044170 /* FeatureNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EF82972FB4F00044170 /* FeatureNameView.swift */; };
+		0BC48EFC2972FCBA00044170 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EFB2972FCBA00044170 /* PersonInfo.swift */; };
+		0BC48EFE2972FCC400044170 /* PersonInfoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EFD2972FCC400044170 /* PersonInfoWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		0BC48EED2972ECB600044170 /* FeatureModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModels.swift; sourceTree = "<group>"; };
 		0BC48EEF2972F38C00044170 /* FeaturePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturePresenterTests.swift; sourceTree = "<group>"; };
 		0BC48EF12972F71600044170 /* FeatureCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCounterView.swift; sourceTree = "<group>"; };
+		0BC48EF82972FB4F00044170 /* FeatureNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureNameView.swift; sourceTree = "<group>"; };
+		0BC48EFB2972FCBA00044170 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
+		0BC48EFD2972FCC400044170 /* PersonInfoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 		0BC48EEA2972EA9100044170 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				0BC48EFA2972FCB000044170 /* Data */,
 				0BC48EF32972F72100044170 /* View */,
 				0BC48EED2972ECB600044170 /* FeatureModels.swift */,
 				0BC48EE82972EA8D00044170 /* FeatureInteractor.swift */,
@@ -124,8 +131,18 @@
 			isa = PBXGroup;
 			children = (
 				0BC48EF12972F71600044170 /* FeatureCounterView.swift */,
+				0BC48EF82972FB4F00044170 /* FeatureNameView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0BC48EFA2972FCB000044170 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0BC48EFB2972FCBA00044170 /* PersonInfo.swift */,
+				0BC48EFD2972FCC400044170 /* PersonInfoWorker.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +251,9 @@
 				0BC48EEC2972EAAB00044170 /* FeaturePresenter.swift in Sources */,
 				0BC48EBF2972EA1C00044170 /* VIPExampleApp.swift in Sources */,
 				0BC48EE92972EA8D00044170 /* FeatureInteractor.swift in Sources */,
+				0BC48EFE2972FCC400044170 /* PersonInfoWorker.swift in Sources */,
+				0BC48EFC2972FCBA00044170 /* PersonInfo.swift in Sources */,
+				0BC48EF92972FB4F00044170 /* FeatureNameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

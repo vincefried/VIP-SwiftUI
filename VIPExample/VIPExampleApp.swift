@@ -16,9 +16,11 @@ struct VIPExampleApp: App {
     }
 
     private static func buildFeatureScene() -> FeatureView {
+        let personInfoWorker = PersonInfoWorker()
+
         let viewState = FeatureView.ViewState()
         let presenter = FeaturePresenter()
-        let interactor = FeatureInteractor(presenter: presenter)
+        let interactor = FeatureInteractor(personInfoWorker: personInfoWorker, presenter: presenter)
         let view = FeatureView(interactor: interactor, viewState: viewState)
 
         presenter.display = viewState
