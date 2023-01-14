@@ -62,6 +62,14 @@ struct FeatureView: View {
 
 struct FeatureView_Previews: PreviewProvider {
     static var previews: some View {
-        FeatureView(interactor: nil, viewState: .init())
+        FeatureView(interactor: nil, viewState: .example)
     }
+}
+
+extension FeatureView.ViewState {
+    static let example: FeatureView.ViewState = {
+        let viewState = FeatureView.ViewState()
+        viewState.labelText = "3"
+        return viewState
+    }()
 }
