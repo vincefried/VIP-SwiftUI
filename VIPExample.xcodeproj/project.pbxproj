@@ -11,10 +11,11 @@
 		0BC48EC12972EA1C00044170 /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EC02972EA1C00044170 /* FeatureView.swift */; };
 		0BC48EC32972EA1D00044170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC48EC22972EA1D00044170 /* Assets.xcassets */; };
 		0BC48EC62972EA1D00044170 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC48EC52972EA1D00044170 /* Preview Assets.xcassets */; };
-		0BC48ED02972EA1D00044170 /* VIPExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48ECF2972EA1D00044170 /* VIPExampleTests.swift */; };
+		0BC48ED02972EA1D00044170 /* FeatureInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48ECF2972EA1D00044170 /* FeatureInteractorTests.swift */; };
 		0BC48EE92972EA8D00044170 /* FeatureInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EE82972EA8D00044170 /* FeatureInteractor.swift */; };
 		0BC48EEC2972EAAB00044170 /* FeaturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EEB2972EAAB00044170 /* FeaturePresenter.swift */; };
 		0BC48EEE2972ECB600044170 /* FeatureModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EED2972ECB600044170 /* FeatureModels.swift */; };
+		0BC48EF02972F38C00044170 /* FeaturePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48EEF2972F38C00044170 /* FeaturePresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +35,11 @@
 		0BC48EC22972EA1D00044170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BC48EC52972EA1D00044170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BC48ECB2972EA1D00044170 /* VIPExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BC48ECF2972EA1D00044170 /* VIPExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPExampleTests.swift; sourceTree = "<group>"; };
+		0BC48ECF2972EA1D00044170 /* FeatureInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureInteractorTests.swift; sourceTree = "<group>"; };
 		0BC48EE82972EA8D00044170 /* FeatureInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureInteractor.swift; sourceTree = "<group>"; };
 		0BC48EEB2972EAAB00044170 /* FeaturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturePresenter.swift; sourceTree = "<group>"; };
 		0BC48EED2972ECB600044170 /* FeatureModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModels.swift; sourceTree = "<group>"; };
+		0BC48EEF2972F38C00044170 /* FeaturePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturePresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 		0BC48ECE2972EA1D00044170 /* VIPExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				0BC48ECF2972EA1D00044170 /* VIPExampleTests.swift */,
+				0BC48ECF2972EA1D00044170 /* FeatureInteractorTests.swift */,
+				0BC48EEF2972F38C00044170 /* FeaturePresenterTests.swift */,
 			);
 			path = VIPExampleTests;
 			sourceTree = "<group>";
@@ -226,7 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC48ED02972EA1D00044170 /* VIPExampleTests.swift in Sources */,
+				0BC48ED02972EA1D00044170 /* FeatureInteractorTests.swift in Sources */,
+				0BC48EF02972F38C00044170 /* FeaturePresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
